@@ -1,0 +1,146 @@
+/* Font Awesome Free Icons */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap");
+
+/* General Style */
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+.section {
+    background-color: #f2f2fc;
+    min-height: 100vh;
+    display: block;
+}
+
+.main-content {
+    padding-left: 270px;
+}
+
+/* Aside */
+.aside {
+    width: 270px;
+    background-color: #fdf9ff;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-right: 1px solid #e8dfec;
+    padding: 30px;
+}
+
+.aside .logo {
+    padding: 30px 0;
+}
+
+.aside .logo a {
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+.aside .logo a::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.aside .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid #d4d4e3;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 30px;
+    z-index: 11;
+    border-radius: 5px;
+    background-color: #fdf9ff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 16px;
+    display: inline-block;
+}
+
+.aside .nav {
+    list-style: none;
+    margin: 80px 0;
+    padding: 0;
+}
+
+.aside .nav li {
+    display: block;
+}
+
+.aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #302e4d;
+    text-decoration: none;
+    line-height: 45px;
+    display: block;
+    border-bottom: 1px solid #e8dfec;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.aside .nav li a:not(.active):hover {
+    padding-left: 5px;
+}
+
+.aside .nav li a .fa {
+    margin-right: 5px;
+}
+
+.aside .copyright-text {
+    font-size: 13px;
+    color: #7d7d7d;
+}
+
+/* Home */
+
