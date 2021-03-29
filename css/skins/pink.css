@@ -8,6 +8,9 @@
     border-right: 4px solid #ec1839;
 }
 
+.blog .blog-item-inner .blog-info .blog-tags a,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
@@ -15,7 +18,7 @@
     color: #ec1839;;
 }
 
-
+.blog .blog-item-inner .blog-img .blog-date,
 .service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
@@ -28,4 +31,8 @@
 .aside .nav-toggler span::after,
 .home .intro .social-links a {
     background-color: #ec1839;
+}
+
+.portfolio .portfolio-filter button.active {
+    border-color: #ec1839;
 }
