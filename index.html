@@ -7,10 +7,24 @@
     <title>Personal Portfolio Template</title>
         <!-- Template css Files -->
     <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="stylesheet" href="/css/skins/pink.css" type="text/css">
+    <link rel="stylesheet" class="alternate-style" title="pink" href="/css/skins/pink.css" type="text/css" >
+        <!-- Live Style Awitcher - Demo Only -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="/css/skins/pink.css" type="text/css" disabled> 
+    <link rel="stylesheet" class="alternate-style" title="blue" href="/css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="/css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="/css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="/css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" href="/css/styleSwitcher.css">
 </head>
 <body>
     
+    <!-- PreLoader -->
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+
     <!-- Main Container -->
     <div class="main-container">
         <!-- Aside -->
@@ -25,12 +39,12 @@
             </div>
             <!-- Nav -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Blog</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#blog"><i class="fa fa-envelope"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
             <!-- Copyright -->
             <div class="copyright-text">
@@ -40,7 +54,7 @@
         <!-- Main Content -->
         <div class="main-content">
             <!-- Home Section -->   
-            <section class="home section hidden">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="/images/about.jpg" alt="profile" class="shadow-dark">
@@ -57,7 +71,7 @@
             </section>
 
             <!-- About Section -->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -102,8 +116,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="" class="btn">Download CV</a>
-                                            <a href="" class="btn">Hire Me</a>
+                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="#contact" data-section-index = "1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +268,7 @@
             </section>
 
             <!-- Service Section -->
-            <section class="service section hidden">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -315,7 +329,7 @@
             </section>
 
             <!-- Portfolio Section -->
-            <section class="portfolio section hidden">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -420,7 +434,7 @@
             </section>
 
             <!-- Blog Section -->
-            <section class="blog section">
+            <section class="blog section" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -474,10 +488,105 @@
                 </div>
             </section>
 
+            <!-- Contact Section -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Contact Info Item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+998 91 665 23 11</p>
+                        </div>
+                        <!-- Contact Info Item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker"></i></div>
+                            <h4>Office</h4>
+                            <p>Tashlak, Fergana, Uzbekistan</p>
+                        </div>
+                        <!-- Contact Info Item -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>masduzb@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="row">
+                        <form class="contact-form padd-15" action="">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
+    </div>
+
+    <!-- Live Style Switcher - Demo -->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0)" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0)" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0)" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0)" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0)" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label for="">
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label for="">
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
     </div>
 
     <!-- Template js -->
     <script src="/js/script.js"></script>
+
+    <!-- Live Style Switcher JS  -->
+    <script src="/js/styleSwitcher.js"></script>
+
 </body>
 </html>
