@@ -667,6 +667,7 @@ input, textarea, select {
     text-align: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .service .service-item .service-item-inner:hover {
@@ -868,12 +869,15 @@ input, textarea, select {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    display: flex;
 }
 
 .blog .blog-item-inner {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid #d4d4e3;
+    width: 100%;
+    background-color: #fdf9ff;
 }
 
 .blog .blog-item-inner .blog-img {
@@ -906,7 +910,6 @@ input, textarea, select {
 
 .blog .blog-item-inner .blog-info {
     padding: 30px 15px;
-    background-color: #fdf9ff;
 }
 
 .blog .blog-item-inner .blog-info .blog-title {
@@ -1092,7 +1095,7 @@ body.dark .shadow-dark {
     }
 
     .aside .nav-toggler.open {
-        left: 300px;
+        left: 200px;
     }
 
     .aside {
@@ -1118,7 +1121,7 @@ body.dark .shadow-dark {
 }
 
 @media (max-width: 991px){
-    .blog .blog-item
+    .blog .blog-item,
     .portfolio .portfolio-item,
     .service .service-item {
         -ms-flex: 0 0 50%;
@@ -1128,6 +1131,8 @@ body.dark .shadow-dark {
 }
 
 @media (max-width: 767px){
+    .blog .blog-item,
+    .service .service-item,
     .contact .contact-form .col-6,
     .about .about-content .experience,
     .about .about-content .education,
